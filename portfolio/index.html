@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1200" />
+  <title>Portofolio – PPG Prajabatan 2026</title>
+  <meta name="description" content="Portofolio profesional mahasiswa PPG Prajabatan 2026 – Pendidik yang Tumbuh Bersama Peserta Didik." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=5" />
+  <link rel="icon" type="image/png" href="logo-ust.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <!-- ══════════════════════════════════════════════
+       PRELOADER / INTRO ANIMATION
+  ══════════════════════════════════════════════ -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <img src="logo-ust.png" alt="Logo UST" class="preloader-logo-img" />
+      </div>
+      <div class="preloader-text">
+        <span class="preloader-name">Nama Lengkap</span>
+        <span class="preloader-sub">PPG Prajabatan 2026</span>
+      </div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar" id="preloaderBar"></div>
+      </div>
+      <p class="preloader-hint">Memuat Portofolio...</p>
+    </div>
+    <div class="preloader-bg-text">TEKNIK<br>MESIN</div>
+  </div>
+
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- ══════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-brand">
+        <!-- Pastikan file logo disimpan dengan nama 'logo-ust.png' di folder portfolio -->
+        <img src="logo-ust.png" alt="Logo UST" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="nav-logo-icon" aria-label="Logo universitas" style="display: none;">🏛️</div>
+        <div class="nav-brand-text">
+          <span class="nav-univ">Universitas Sarjanawiyata Tamansiswa</span>
+          <span class="nav-sub">PPG Prajabatan 2026</span>
+        </div>
+      </a>
+
+      <!-- Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"      class="nav-link active" id="nav-beranda">Beranda</a></li>
+        <li><a href="#profil"    class="nav-link"        id="nav-profil">Profil</a></li>
+        <li><a href="#artefak"   class="nav-link"        id="nav-artefak">Artefak</a></li>
+        <li><a href="#kompetensi" class="nav-link"       id="nav-kompetensi">Kompetensi</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="#kontak" class="btn-hubungi" id="btn-hubungi">Hubungi Saya</a>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════
+       HERO / HOME
+  ══════════════════════════════════════════════ -->
+  <div class="hero-wrapper">
+  <section class="hero" id="home">
+
+    <!-- Decorative circles & Ornaments -->
+    <div class="deco deco-circle-lg"   aria-hidden="true"></div>
+    <div class="deco deco-circle-md"   aria-hidden="true"></div>
+    <div class="deco deco-circle-sm-1" aria-hidden="true"></div>
+    <div class="deco deco-circle-sm-2" aria-hidden="true"></div>
+    <div class="deco deco-circle-sm-3" aria-hidden="true"></div>
+    <div class="deco deco-circle-sm-4" aria-hidden="true"></div>
+    <div class="deco deco-dot-group-1" aria-hidden="true"></div>
+    <div class="deco deco-dot-group-2" aria-hidden="true"></div>
+    <div class="deco deco-outline-1"   aria-hidden="true"></div>
+    <div class="deco deco-outline-2"   aria-hidden="true"></div>
+    <div class="deco deco-blob"        aria-hidden="true"></div>
+    <!-- New Ornaments -->
+    <div class="deco deco-star-1"      aria-hidden="true">✦</div>
+    <div class="deco deco-star-2"      aria-hidden="true">✦</div>
+    <div class="deco deco-star-3"      aria-hidden="true">✦</div>
+    <div class="deco deco-plus-1"      aria-hidden="true">+</div>
+    <div class="deco deco-plus-2"      aria-hidden="true">+</div>
+    <div class="deco deco-ring-1"      aria-hidden="true"></div>
+
+    <!-- Left content -->
+    <div class="hero-left">
+      <p class="hero-eyebrow">E Portofolio PPG Prajabatan 2026</p>
+      <div style="animation: fadeInUp 0.6s 0.1s ease both; display: inline-block;">
+        <h1 class="hero-name">
+          Nama<br />Lengkap
+        </h1>
+      </div>
+      <p style="font-family: 'Outfit', sans-serif; font-size: 1.1rem; color: var(--purple); font-weight: 700; margin-bottom: 0.8rem; letter-spacing: 1px; animation: fadeInUp 0.6s 0.15s ease both; opacity: 0.85;">
+        NIM: 20260914227
+      </p>
+      <p class="hero-tagline">
+        Dari Pembelajaran Menjadi Pendidik: Perjalanan<br />
+        Menuju Guru Profesional
+      </p>
+      <div class="hero-socials">
+        <a href="https://instagram.com/user_random_123" class="social-btn sb-ig" target="_blank" rel="noopener" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/user-random-link/" class="social-btn sb-li" target="_blank" rel="noopener" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:user.random@email.com" class="social-btn sb-em" title="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://www.youtube.com/@user_channel_random" class="social-btn sb-yt" target="_blank" rel="noopener" title="YouTube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right – photo -->
+    <div class="hero-right">
+      <div class="hero-bg-text">TEKNIK MESIN<br>TEKNIK MESIN<br>TEKNIK MESIN<br>TEKNIK MESIN</div>
+      <div class="photo-wrap">
+        <!-- Ganti src di bawah ini dengan foto kamu, contoh: src="foto.png" -->
+        <img
+          src="photo.png"
+          alt="Foto Profil"
+          class="hero-photo"
+          id="hero-photo"
+          onerror="this.style.display='none'; document.getElementById('photo-placeholder').style.display='flex';"
+        />
+        <!-- Placeholder jika foto belum ada -->
+        <div class="photo-placeholder" id="photo-placeholder">
+          <span class="photo-placeholder-icon">👤</span>
+          <p>Letakkan foto kamu<br /><code>photo.png</code></p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  </div><!-- /.hero-wrapper -->
+
+  <section class="section" id="profil" style="position: relative; overflow: hidden; background: linear-gradient(180deg, var(--white) 0%, var(--bg-alt) 100%); padding-top: 6rem;">
+
+    
+    <!-- Ornaments Profil (Premium Aesthetic) -->
+    <div style="position: absolute; top: -100px; left: -100px; width: 600px; height: 600px; background: radial-gradient(circle, var(--purple-soft) 0%, transparent 70%); border-radius: 50%; animation: blobPulse 10s infinite; z-index: 0; pointer-events: none;"></div>
+    <div style="position: absolute; bottom: -150px; right: -100px; width: 650px; height: 650px; background: radial-gradient(circle, hsl(258,70%,88%,0.4) 0%, transparent 65%); border-radius: 50%; animation: floatY 8s infinite alternate; z-index: 0; pointer-events: none;"></div>
+
+    <div style="position: absolute; top: 35%; left: 35%; width: 450px; height: 450px; background: radial-gradient(circle, hsl(258,60%,92%,0.7) 0%, transparent 60%); border-radius: 50%; animation: blobPulse 12s infinite alternate-reverse; z-index: 0; pointer-events: none;"></div>
+
+    <!-- Huge Rings & Small Circles -->
+    <div style="position: absolute; top: 5%; right: -10%; width: 450px; height: 450px; border: 3px dashed hsl(258,50%,80%,0.35); border-radius: 50%; animation: spin 25s linear infinite; z-index: 0; pointer-events: none;"></div>
+    <div style="position: absolute; bottom: 5%; left: -5%; width: 280px; height: 280px; border: 2px solid hsl(258,50%,85%,0.4); border-radius: 50%; animation: spin 20s linear infinite reverse; z-index: 0; pointer-events: none;"></div>
+    <div style="position: absolute; top: 60%; right: 10%; width: 90px; height: 90px; background: hsl(258,60%,85%,0.35); border-radius: 50%; animation: floatY 5s infinite 1s; z-index: 0; pointer-events: none;"></div>
+    <div style="position: absolute; top: 25%; left: 15%; width: 45px; height: 45px; background: hsl(258,70%,80%,0.45); border-radius: 50%; animation: floatY 6s infinite 0.5s; z-index: 0; pointer-events: none;"></div>
+
+    <!-- Floating Icons (Stars, Plus) -->
+    <div style="position: absolute; top: 12%; right: 20%; font-size: 3.5rem; color: var(--purple-light); opacity: 0.8; animation: spin 14s linear infinite; z-index: 0; pointer-events: none;">✦</div>
+    <div style="position: absolute; bottom: 35%; left: 10%; font-size: 2.8rem; color: var(--purple-light); opacity: 0.7; animation: pulse 3s infinite alternate; z-index: 0; pointer-events: none;">+</div>
+    <div style="position: absolute; bottom: 15%; right: 30%; font-size: 1.8rem; color: hsl(330,70%,80%); opacity: 0.9; animation: spin 8s linear infinite reverse; z-index: 0; pointer-events: none;">✦</div>
+    <div style="position: absolute; top: 30%; left: 8%; font-size: 2.2rem; color: var(--text-muted); opacity: 0.25; animation: pulse 4s infinite alternate; z-index: 0; pointer-events: none;">+</div>
+    <div style="position: absolute; top: 55%; right: 5%; font-size: 2.5rem; color: var(--text-muted); opacity: 0.2; animation: spin 16s linear infinite; z-index: 0; pointer-events: none;">✦</div>
+
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="section-header">
+        <span class="section-tag" style="background: var(--white);">Kenalan Lebih Jauh</span>
+        <h2 class="section-title">Profil Saya</h2>
+      </div>
+      
+      <!-- TAB NAVIGATION -->
+      <div class="tabs-nav reveal">
+        <button class="tab-btn active" data-target="tab-asal">Asal-Usul</button>
+        <button class="tab-btn" data-target="tab-hobi">Hobi</button>
+        <button class="tab-btn" data-target="tab-alasan">Menjadi Pendidik</button>
+      </div>
+
+      <!-- TAB CONTENT -->
+      <div class="tabs-content">
+        
+        <!-- Tab 1: Asal-Usul -->
+        <div class="tab-panel active" id="tab-asal">
+          <div class="profil-grid reveal">
+            <div class="profil-text">
+              <h3>Halo, saya Nama Lengkap! 👋</h3>
+              <p>Perkenalkan, saya <strong>Nama Lengkap</strong>, berasal dari <strong>Kabupaten Boyolali</strong>, sebuah daerah yang dikenal dengan suasana pedesaan yang asri serta kental dengan nilai-nilai budaya Jawa. Keunikan daerah asal saya terletak pada kuatnya budaya gotong royong, kesederhanaan hidup, serta sikap <em>tepa selira</em> dan <em>andhap asor</em> yang masih dijunjung tinggi dalam kehidupan masyarakat. Lingkungan ini membentuk karakter saya menjadi pribadi yang menghargai kebersamaan, menjunjung etika, serta memiliki kepedulian terhadap orang lain.</p>
+
+              <p>Perjalanan hidup saya yang kemudian berpindah dan berkembang di Tengaran, Kabupaten Semarang hingga saat ini berdomisili di <strong>Kabupaten Klaten</strong> semakin memperkaya pengalaman saya dalam memahami keberagaman karakter dan latar belakang individu. Dari pengalaman tersebut, saya menyadari bahwa setiap orang memiliki potensi yang berbeda dan membutuhkan pendekatan yang berbeda pula dalam proses pembelajaran.</p>
+
+              <p>Inspirasi saya untuk menjadi seorang guru tidak terlepas dari pengalaman belajar serta peran guru-guru yang saya temui sepanjang perjalanan pendidikan. Selain itu, pengalaman saya sebagai asisten dosen saat menempuh pendidikan di <strong>Universitas Sebelas Maret</strong> dan keterlibatan aktif dalam organisasi semakin menumbuhkan ketertarikan saya pada dunia pendidikan. Pengalaman tersebut diperkuat ketika saya terjun langsung menjadi <strong>guru di Wonogiri</strong>, yang memberikan pemahaman nyata bahwa menjadi pendidik bukan sekadar menyampaikan materi, melainkan membimbing, mengarahkan, dan menginspirasi peserta didik.</p>
+
+              <p>Melalui Program Pendidikan Profesi Guru (PPG), saya memiliki tujuan untuk menjadi guru profesional yang tidak hanya kompeten dalam bidang keahlian, tetapi juga mampu menciptakan pembelajaran yang bermakna, berpusat pada peserta didik, serta adaptif terhadap perkembangan zaman. Saya ingin menjadi pendidik yang mampu menuntun peserta didik agar berkembang sesuai dengan potensi dan karakter yang dimiliki, sekaligus membentuk generasi yang tidak hanya cerdas secara akademik, tetapi juga berkarakter kuat.</p>
+
+              <p style="font-style: italic; color: var(--purple); font-weight: 600; margin-top: 1rem;">
+                “Seorang guru bukan hanya pengajar, tetapi penuntun yang membantu setiap langkah kecil menuju masa depan yang besar.”
+              </p>
+            </div>
+            <div class="profil-image-wrap" style="min-height: 400px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 8px 32px hsl(258,60%,62%,0.08); position: relative; display: flex; flex-direction: column;">
+               <img src="foto-perjalanan.jpg" alt="Foto Satriya" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+               <div class="photo-placeholder" style="display:none; width:100%; height:100%; min-height: 400px; align-items:center; justify-content:center; flex-direction:column; background:var(--purple-soft); border:2.5px dashed var(--purple-light); border-radius:var(--radius-lg); text-align:center; position: relative;">
+                 <span class="photo-placeholder-icon" style="font-size:4.5rem; margin-bottom:1rem;">🏛️</span>
+                 <p style="color:var(--text-muted); font-size:1.05rem; line-height:1.6;"> Boyolali ➔ Klaten ➔ UNS <br> <strong>Profil & Perjalanan</strong> </p>
+               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Hobi -->
+        <div class="tab-panel" id="tab-hobi">
+          <div class="hobi-interactive-container reveal">
+            <div class="hobi-nav-list">
+              <button class="hobi-nav-btn active" data-hobi-target="hobi-item-hiking">
+                <span class="hobi-nav-title">Hiking</span>
+              </button>
+              <button class="hobi-nav-btn" data-hobi-target="hobi-item-fotografi">
+                <span class="hobi-nav-title">Fotografi</span>
+              </button>
+              <button class="hobi-nav-btn" data-hobi-target="hobi-item-traveling">
+                <span class="hobi-nav-title">Traveling</span>
+              </button>
+            </div>
+            
+            <div class="hobi-content-display">
+              <!-- Hiking Slider Item -->
+              <div class="hobi-display-item active" id="hobi-item-hiking">
+                <div class="hobi-display-img">
+                  <div class="polaroid-frame">
+                    <img src="foto-hiking.jpg" alt="Hiking" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                    <div class="hobi-placeholder" style="display:none;">🏕️<br><code>foto-hiking.jpg</code></div>
+                    <span class="photo-caption">Mt. Ungaran</span>
+                  </div>
+                </div>
+                <div class="hobi-display-text">
+                  <h4>Hiking</h4>
+                  <p style="margin-bottom: 0.8rem;">Hiking adalah hobi yang indah karena mengajarkan kita untuk berhenti sejenak dari hiruk-pikuk kehidupan dan kembali mendengarkan diri sendiri. Di setiap langkah, kita belajar tentang kesabaran, ketekunan, dan arti menikmati proses tanpa terburu-buru. Nafas yang terasa berat justru menjadi pengingat bahwa kita sedang benar-benar hidup.</p>
+                  <p>Di tengah alam yang sunyi dan sederhana, kita menemukan ketenangan yang tidak bisa didapatkan di tempat lain. Hiking bukan hanya tentang mencapai puncak, tetapi tentang perjalanan itu sendiri tentang bagaimana kita belajar bersyukur, menghargai setiap langkah, dan pulang dengan hati yang lebih tenang.</p>
+                </div>
+              </div>
+              
+              <!-- Fotografi Slider Item -->
+              <div class="hobi-display-item" id="hobi-item-fotografi">
+                <div class="hobi-display-img">
+                  <div class="polaroid-frame">
+                    <img src="hobi-fotografi.png" alt="Fotografi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                    <div class="hobi-placeholder" style="display:none;">📸<br><code>hobi-fotografi.png</code></div>
+                    <span class="photo-caption">Photography</span>
+                  </div>
+                </div>
+                <div class="hobi-display-text">
+                  <h4>Fotografi</h4>
+                  <p>Menangkap momen-momen bermakna dan mengabadikan peristiwa berharga di sekitar saya lewat lensa kamera.</p>
+                </div>
+              </div>
+
+              <!-- Traveling Slider Item -->
+              <div class="hobi-display-item" id="hobi-item-traveling">
+                <div class="hobi-display-img">
+                  <div class="polaroid-frame">
+                    <img src="foto-traveling.jpg" alt="Traveling" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                    <div class="hobi-placeholder" style="display:none;">🚗<br><code>foto-traveling.jpg</code></div>
+                    <span class="photo-caption">Traveling</span>
+                  </div>
+                </div>
+                <div class="hobi-display-text">
+                  <h4>Traveling</h4>
+                  <p>Bepergian ke tempat baru, mempelajari budaya lokal, selalu dapat memperluas wawasan dan pengalaman hidup saya.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Alasan Pendidik -->
+        <div class="tab-panel" id="tab-alasan">
+           <div class="alasan-wrap">
+              <!-- Special Ornaments for Tab 3 -->
+              <div class="alasan-ornament alasan-ornament-1">✦</div>
+              <div class="alasan-ornament alasan-ornament-2">✦</div>
+              <div class="alasan-ornament alasan-ornament-3">+</div>
+              <div class="alasan-ornament alasan-ornament-4">+</div>
+
+              <div class="alasan-icon alasan-icon-anim" style="font-size: 4rem; margin-bottom: 1.25rem;">🎓</div>
+              <h3 class="alasan-highlight" style="background: var(--purple-soft); display: inline-block; padding: 0.2rem 1rem; border-radius: 99px; color: var(--purple); font-family: 'Outfit', sans-serif; font-size: 1.85rem; margin-bottom: 1.5rem;">Sebuah Panggilan Hati</h3>
+              
+              <div style="text-align: left; margin-top: 1.5rem; position: relative; z-index: 2;">
+                <p>Saya memilih menjadi guru karena menyadari bahwa pendidikan memiliki peran besar dalam membentuk masa depan seseorang. Keinginan ini tumbuh dari pengalaman belajar yang saya jalani serta semakin kuat saat menempuh pendidikan di <strong>Universitas Sebelas Maret</strong>, ketika saya aktif berorganisasi dan menjadi asisten dosen. Dari sana, saya merasakan bahwa berbagi ilmu dan membantu orang lain memahami sesuatu memberikan kepuasan tersendiri.</p>
+                <p>Pengalaman mengajar di <strong>Wonogiri</strong> semakin mempertegas pilihan saya untuk menjadi pendidik. Saya memahami bahwa setiap peserta didik memiliki potensi yang berbeda dan membutuhkan bimbingan yang tepat. Oleh karena itu, saya ingin menjadi guru profesional yang tidak hanya mengajar, tetapi juga membimbing dan menginspirasi, serta menciptakan pembelajaran yang bermakna bagi peserta didik.</p>
+              </div>
+           </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       ARTEFAK
+  ══════════════════════════════════════════════ -->
+  <section class="section section-alt" id="artefak">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Karya</span>
+        <h2 class="section-title">Artefak Pembelajaran</h2>
+        <p class="section-desc">Kumpulan karya dan produk pembelajaran yang dikembangkan selama PPG</p>
+      </div>
+      <div class="artefak-grid">
+
+        <a href="perangkat-ajar.html" class="artefak-card" id="art-1">
+          <div class="artefak-icon">📋</div>
+          <div class="artefak-badge">Perangkat Ajar</div>
+          <h3>RPP Perencanaan Pembelajaran</h3>
+          <p>Dokumen perencanaan pembelajaran mendalam mencakup proyeksi ortogonal dengan model PJBL.</p>
+          <div class="artefak-tags"><span>RPP</span><span>PJBL</span></div>
+        </a>
+
+        <a href="media-pembelajaran.html" class="artefak-card" id="art-2">
+          <div class="artefak-icon">🎮</div>
+          <div class="artefak-badge">Media</div>
+          <h3>Media Pembelajaran Interaktif</h3>
+          <p>Pengembangan media berbasis game digital untuk meningkatkan motivasi belajar peserta didik.</p>
+          <div class="artefak-tags"><span>Game</span><span>Quizizz</span></div>
+        </a>
+
+        <a href="javascript:void(0)" class="artefak-card" id="art-3">
+          <div class="artefak-icon">📝</div>
+          <div class="artefak-badge">Hasil Kerja</div>
+          <h3>Contoh Hasil Kerja Siswa</h3>
+          <p>Kumpulan artefak hasil pekerjaan peserta didik yang menunjukkan capaian kompetensi pembelajaran.</p>
+          <div class="artefak-tags"><span>Portofolio</span><span>Siswa</span></div>
+        </a>
+
+        <a href="javascript:void(0)" class="artefak-card" id="art-4">
+          <div class="artefak-icon">⭐</div>
+          <div class="artefak-badge">Penilaian</div>
+          <h3>Penilaian GP dan DPL</h3>
+          <p>Lembar refleksi dan penilaian kinerja dari Guru Pamong serta DPL selama praktik lapangan.</p>
+          <div class="artefak-tags"><span>Refleksi</span><span>Penilaian</span></div>
+        </a>
+
+        <a href="javascript:void(0)" class="artefak-card" id="art-5">
+          <div class="artefak-icon">🎬</div>
+          <div class="artefak-badge">Video</div>
+          <h3>Video Pembelajaran</h3>
+          <p>Rekaman proses pembelajaran di kelas sebagai bagian dari dokumentasi praktik mengajar.</p>
+          <div class="artefak-tags"><span>Video</span><span>Praktik</span></div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       KOMPETENSI
+  ══════════════════════════════════════════════ -->
+  <section class="section" id="kompetensi">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Keahlian</span>
+        <h2 class="section-title">Kompetensi</h2>
+      </div>
+      <div class="komp-grid">
+        <div class="komp-col">
+          <h3 class="komp-cat">🏫 Pedagogik</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-header"><span>Perencanaan Pembelajaran</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>Asesmen & Evaluasi</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>Diferensiasi Pembelajaran</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="komp-col">
+          <h3 class="komp-cat">💻 Teknologi</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-header"><span>Microsoft Office</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>Canva & Desain</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>Google Workspace</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="komp-col">
+          <h3 class="komp-cat">🤝 Soft Skills</h3>
+          <div class="softskill-grid">
+            <div class="softskill-item">Komunikasi Efektif</div>
+            <div class="softskill-item">Berpikir Kritis</div>
+            <div class="softskill-item">Kolaborasi Tim</div>
+            <div class="softskill-item">Empati</div>
+            <div class="softskill-item">Kreativitas</div>
+            <div class="softskill-item">Adaptif</div>
+            <div class="softskill-item">Problem Solving</div>
+            <div class="softskill-item">Growth Mindset</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       KONTAK
+  ══════════════════════════════════════════════ -->
+  <section class="section section-alt" id="kontak">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kontak</span>
+        <h2 class="section-title">Hubungi Saya</h2>
+        <p class="section-desc">Saya terbuka untuk kolaborasi dan diskusi seputar pendidikan!</p>
+      </div>
+      <div class="kontak-wrap">
+        <div class="kontak-info">
+          <div class="kontak-item" id="k-email">
+            <div class="kontak-icon">📧</div>
+            <div><h4>Email</h4><a href="mailto:user.random@email.com">user.random@email.com</a></div>
+          </div>
+          <div class="kontak-item" id="k-ig">
+            <div class="kontak-icon">📱</div>
+            <div><h4>Instagram</h4><a href="https://instagram.com/user_random_123">@user_random_123</a></div>
+          </div>
+          <div class="kontak-item" id="k-li">
+            <div class="kontak-icon">💼</div>
+            <div><h4>LinkedIn</h4><a href="https://www.linkedin.com/in/user-random-link/" target="_blank" rel="noopener">linkedin.com/in/user-random-link</a></div>
+          </div>
+          <div class="kontak-item" id="k-loc">
+            <div class="kontak-icon">📍</div>
+            <div><h4>Lokasi</h4><span>Indonesia</span></div>
+          </div>
+          
+          <!-- Small integrated map -->
+          <div class="map-small reveal">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9566974898686!2d110.39014167425447!3d-7.801646078330744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5770519e64a1%3A0x633d988cc6c8c439!2sUniversitas%20Sarjanawiyata%20Tamansiswa!5e0!3m2!1sen!2sid!4v1713597600000!5m2!1sen!2sid" 
+              width="100%" 
+              height="200" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+        <form class="kontak-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-name">Nama</label>
+              <input type="text" id="f-name" placeholder="Nama Anda" required />
+            </div>
+            <div class="form-group">
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" placeholder="email@anda.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-subject">Subjek</label>
+            <input type="text" id="f-subject" placeholder="Perihal pesan Anda" required />
+          </div>
+          <div class="form-group">
+            <label for="f-message">Pesan</label>
+            <textarea id="f-message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="btn-submit">Kirim Pesan →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 <strong>Nama Lengkap</strong> · PPG Prajabatan Universitas Sarjanawiyata</p>
+      <div class="footer-nav">
+        <a href="#home">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#artefak">Artefak</a>
+        <a href="#kompetensi">Kompetensi</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Kembali ke atas">↑</button>
+  <div class="toast" id="toast">Pesan berhasil dikirim! 🎉</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

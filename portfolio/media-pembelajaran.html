@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1200" />
+  <title>Media Pembelajaran – Portofolio Satriya</title>
+  <meta name="description" content="Media Pembelajaran untuk melengkapi kebutuhan kelas" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=6" />
+  <link rel="icon" type="image/png" href="logo-ust.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    .detail-section { padding: 9rem 2rem 5rem; min-height: 80vh; background: var(--bg-alt); }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      color: var(--text-muted); text-decoration: none; font-weight: 600;
+      margin-bottom: 2rem; transition: var(--transition);
+      background: var(--white); padding: 0.6rem 1.2rem;
+      border-radius: 99px; border: 1.5px solid var(--border);
+    }
+    .back-btn:hover { color: var(--purple); border-color: var(--purple-light); transform: translateY(-2px); }
+    .media-container {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border);
+    }
+    .media-header { margin-bottom: 3rem; border-bottom: 2px solid var(--border); padding-bottom: 2rem; }
+    .section-tag {
+      display: inline-block; background: var(--purple-soft); color: var(--purple);
+      border: 1px solid var(--border); padding: 0.28rem 1rem; border-radius: 99px;
+      font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 1rem;
+    }
+    .media-header h1 { font-family: 'Outfit', sans-serif; font-size: 2.2rem; color: var(--dark); margin-bottom: 1rem; }
+    .media-meta { display: flex; gap: 1.5rem; color: var(--text-muted); font-size: 0.9rem; font-weight: 500; }
+    
+    .preview-box {
+      background: var(--purple-bg);
+      border: 2px dashed var(--purple-light);
+      border-radius: var(--radius-lg);
+      padding: 5rem 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .preview-icon {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      color: var(--purple);
+      animation: pulse 3s infinite alternate;
+    }
+    .preview-box h3 {
+      font-family: 'Outfit', sans-serif;
+      color: var(--dark);
+      font-size: 1.8rem;
+      margin-bottom: 0.8rem;
+    }
+    .preview-box p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin-bottom: 1rem;
+    }
+    .preview-box small {
+      display: inline-block;
+      background: var(--white);
+      padding: 0.4rem 1rem;
+      border-radius: 99px;
+      color: var(--purple-dark);
+      font-weight: 600;
+      border: 1px solid var(--border);
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(1.1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ══════════════════════════════════════════════
+       PRELOADER / INTRO ANIMATION
+  ══════════════════════════════════════════════ -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <img src="logo-ust.png" alt="Logo UST" class="preloader-logo-img" />
+      </div>
+      <div class="preloader-text">
+        <span class="preloader-name">Nama Lengkap</span>
+        <span class="preloader-sub">PPG Prajabatan 2026</span>
+      </div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar" id="preloaderBar"></div>
+      </div>
+      <p class="preloader-hint">Memuat Portofolio...</p>
+    </div>
+    <div class="preloader-bg-text">TEKNIK<br>MESIN</div>
+  </div>
+
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- NAVBAR (REUSED) -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html#home" class="nav-brand">
+        <img src="logo-ust.png" alt="Logo UST" class="nav-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="nav-logo-icon" aria-label="Logo universitas" style="display: none;">🏛️</div>
+        <div class="nav-brand-text">
+          <span class="nav-univ">Universitas Sarjanawiyata Tamansiswa</span>
+          <span class="nav-sub">PPG Prajabatan 2026</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#home" class="nav-link">Beranda</a></li>
+        <li><a href="index.html#profil" class="nav-link">Profil</a></li>
+        <li><a href="index.html#artefak" class="nav-link">Artefak</a></li>
+        <li><a href="index.html#kontak" class="btn-hubungi">Hubungi Saya</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="detail-section page-enter">
+    <div class="container">
+      <a href="index.html#artefak" class="back-btn">← Kembali ke Artefak</a>
+      
+      <div class="media-container">
+        <div class="media-header">
+          <span class="section-tag">Media Pembelajaran</span>
+          <h1>Game Edukasi Interaktif</h1>
+          <div class="media-meta">
+            <span>📅 2026</span>
+            <span>📂 Media Interaktif</span>
+            <span>🎮 Quizizz / Flash</span>
+          </div>
+        </div>
+
+        <div class="media-content">
+          <p style="color: var(--text); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+            Media pembelajaran berbasis game menggunakan platform digital untuk meningkatkan motivasi dan keterlibatan peserta didik selama proses pembelajaran. Media ini dirancang khusus untuk membuat konsep yang sulit menjadi lebih menyenangkan untuk dipelajari.
+          </p>
+
+          <div class="preview-box">
+            <div class="preview-icon">🎲</div>
+            <h3>File Media Belum Tersedia</h3>
+            <p>File atau embed link untuk game edukasi interaktif ini sedang disiapkan dan akan segera disusulkan.</p>
+            <small>Media akan ditampilkan di area ini</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 <strong>Nama Lengkap</strong> · PPG Prajabatan Universitas Sarjanawiyata</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
